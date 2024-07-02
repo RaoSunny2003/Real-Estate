@@ -1,3 +1,170 @@
-.single {
-  background-color: saddlebrown;
+.singlePage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .details {
+    flex: 3;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      margin-right: 50px;
+
+      .sliderSection {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .arrow {
+          flex: 1;
+          img {
+            margin-left: 50px;
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .right {
+          transform: rotate(180deg);
+        }
+
+        .close {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: white;
+          font-size: 34px;
+          padding: 20px 40px;
+          cursor: pointer;
+        }
+
+        .imageContainer {
+          flex: 10;
+
+          img {
+            object-fit: cover;
+            height: 100vh;
+            width: 90vw;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .imageSection {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        gap: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        .largeImg {
+          flex: 3;
+          margin-left: 20px;
+        }
+
+        .commonImg {
+          flex: 1;
+          margin-right: 20px;
+          width: 100%;
+          margin-top: 2px;
+          img {
+            margin-bottom: 20px;
+            height: 100px;
+          }
+        }
+      }
+
+      .profileSection {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+
+        .apartmentInfo {
+          flex: 2.5;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          h1 {
+            font-size: 34px;
+            font-weight: 500;
+          }
+
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            img {
+              width: 15px;
+            }
+            span {
+              font-weight: 300;
+            }
+          }
+
+          .price {
+            font-size: 24px;
+            background-color: #fece51;
+            width: max-content;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 300;
+          }
+        }
+
+        .ownerInfo {
+          flex: 1;
+          .wrapper {
+            padding-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(248, 227, 189);
+            width: 150px;
+            height: 140px;
+            border-radius: 10px;
+          }
+
+          img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: 5px solid black;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .descriptionSection {
+        margin-top: 50px;
+        font-weight: 350;
+      }
+    }
+  }
+
+  .feature {
+    flex: 2;
+    background-color: black;
+  }
 }
